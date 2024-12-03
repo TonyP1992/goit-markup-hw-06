@@ -54,7 +54,8 @@
           </svg>
         </button>
       </div>
-      <div class="mobile-menu is-open" data-menu>
+      <!-- Mobile menu -->
+      <div class="mobile-menu is-open hidden" data-menu>
         <div class="container mobile-menu-container">
           <button class="mobile-menu-close" data-menu-close>
             <svg class="mobile-btn-close" width="8" height="8">
@@ -131,12 +132,16 @@
     </header>
     <main>
       <!-- Hero -->
-      <section class="hero hidden">
-        <div class="container">
+      <section class="section-hero">
+        <div class="hero">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button type="button" class="button-name" data-modal-open>
             Order Service
           </button>
+          <img
+            srcset="./images/hero image dark-bg-main-@1x.jpg 1x, ./images/hero image dark-bg-main-@2x.jpg 2x"
+            alt=""
+          />
         </div>
       </section>
 
