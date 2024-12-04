@@ -384,7 +384,7 @@
         </div>
       </section>
       <!-- Section4-->
-      <section class="our-portfolio">
+      <section class="our-portfolio hidden">
         <div class="container">
           <h2 class="portfolio-title">Our Portfolio</h2>
           <ul class="portfolio-list">
@@ -514,7 +514,7 @@
       </section>
     </main>
     <!-- Footer -->
-    <footer class="page-footer">
+    <footer class="page-footer hidden">
       <div class="container footer-container">
         <div class="footer-logo-title">
           <a class="footer-logo" href="./index.html"
@@ -581,73 +581,75 @@
       </div>
     </footer>
     <!-- Modal -->
-    <div class="backdrop" data-modal>
-      <div class="modal">
-        <button class="modal-close-btn" type="button" data-modal-close>
+    <div class="mobile-backdropis-open" data-modal>
+      <div class="mobile-modal">
+        <button class="mobile-modal-close-btn" type="button" data-modal-close>
           <svg class="icon-close" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
 
-        <p class="modal-prg-text">
+        <p class="mobile-modal-prg-text">
           Leave your contacts and we will call you back
         </p>
 
         <!-- Form -->
-        <form class="modal-form">
-          <div class="modal-form-field">
-            <label class="form-label" for="user-name"> Name </label>
-            <div class="input-wrapper">
+        <form class="mobile-modal-form">
+          <div class="mobile-modal-form-field">
+            <label class="mobile-form-label" for="user-name"> Name </label>
+            <div class="mobile-input-wrapper">
               <input
-                class="form-input"
+                class="mobile-form-input"
                 type="text"
                 id="user-name"
                 name="user-name"
               />
-              <svg class="svg-modal" width="18" height="24">
+              <svg class="mobile-svg-modal" width="18" height="24">
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
             </div>
           </div>
-          <div class="modal-form-field">
-            <label class="form-label" for="user-phone">Phone</label>
-            <div class="input-wrapper">
+          <div class="mobile-modal-form-field">
+            <label class="mobile-form-label" for="user-phone">Phone</label>
+            <div class="mobile-input-wrapper">
               <input
-                class="form-input"
+                class="mobile-form-input"
                 type="tel"
                 id="user-phone"
                 name="user-phone"
               />
-              <svg class="svg-modal" width="18" height="24">
+              <svg class="mobile-svg-modal" width="18" height="24">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
             </div>
           </div>
-          <div class="modal-form-field">
-            <label class="form-label" for="user-email">Email</label>
-            <div class="input-wrapper">
+          <div class="mobile-modal-form-field">
+            <label class="mobile-form-label" for="user-email">Email</label>
+            <div class="mobile-input-wrapper">
               <input
-                class="form-input"
+                class="mobile-form-input"
                 type="email"
                 id="user-email"
                 name="user-email"
               />
-              <svg class="svg-modal" width="18" height="24">
+              <svg class="mobile-svg-modal" width="18" height="24">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
             </div>
           </div>
-          <div class="modal-form-comment">
-            <label class="form-label" for="user-comment"> Comment </label>
+          <div class="mobile-input-wrapper">
+            <label class="mobile-form-label" for="user-comment">
+              Comment
+            </label>
 
             <textarea
-              class="comment"
+              class="mobile-modal-form-textarea"
               name="user-comment"
               id="user-comment"
               placeholder="Text input"
             ></textarea>
           </div>
-          <div class="modal-checkbox">
+          <div class="mobile-modal-checkbox">
             <input
               class="visually-hidden"
               type="checkbox"
@@ -655,19 +657,25 @@
               value="true"
               name="user-privacy"
             />
-            <label class="checkbox-label" for="user-privacy">
-              <span class="checkbox-span"
-                ><svg class="checkbox-svg" width="10" height="8">
+            <label class="mobile-modal-form-agreement-text" for="user-privacy">
+              <span class="mobile-checkbox-span"
+                ><svg
+                  class="mobile-checkbox-checkbox-svg"
+                  width="10"
+                  height="8"
+                >
                   <use href="./images/icons.svg#icon-check"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
+              <span class="mobile-modal-form-checkbox-text">
+                I accept the terms and conditions of the
 
-              <a class="privacy-policy" href="#">Privacy Policy</a>
+                <a class="mobile-privacy-policy" href="#">Privacy Policy</a>
+              </span>
             </label>
           </div>
 
-          <button class="modal-button" type="submit">Send</button>
+          <button class="mobile-modal-button-send" type="submit">Send</button>
         </form>
       </div>
     </div>
