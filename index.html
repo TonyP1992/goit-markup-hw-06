@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header hidden">
       <div class="container header-container">
         <nav class="header-nav">
           <a class="logo header-logo" href="./index.html"
@@ -132,7 +132,7 @@
     </header>
     <main>
       <!-- Hero -->
-      <section class="section-hero">
+      <section class="section-hero hidden">
         <div class="hero">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button type="button" class="button-name" data-modal-open>
@@ -152,7 +152,7 @@
           <h2 class="visually-hidden">Our Strategy</h2>
           <ul class="list-benefits">
             <li class="benefits-item">
-              <div class="rectangle-box">
+              <div class="features-wrapper">
                 <svg class="icon-benefit" width="64" height="64">
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
@@ -165,7 +165,7 @@
               </p>
             </li>
             <li class="benefits-item">
-              <div class="rectangle-box">
+              <div class="features-wrapper">
                 <svg class="icon-benefit" width="64" height="64">
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
@@ -178,7 +178,7 @@
               </p>
             </li>
             <li class="benefits-item">
-              <div class="rectangle-box">
+              <div class="features-wrapper">
                 <svg class="icon-benefit" width="64" height="64">
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
@@ -191,7 +191,7 @@
               </p>
             </li>
             <li class="benefits-item">
-              <div class="rectangle-box">
+              <div class="features-wrapper">
                 <svg class="icon-benefit" width="64" height="64">
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
@@ -209,7 +209,7 @@
 
       <!-- Section3-->
       <section class="team hidden">
-        <div class="container">
+        <div class="container container-team">
           <h2 class="team-title">Our Team</h2>
           <ul class="list-team">
             <li class="team-item">
@@ -219,7 +219,7 @@
                 width="264"
                 height="260"
               />
-              <div class="card">
+              <div class="team-container">
                 <h3 class="h-team">Mark Guerrero</h3>
                 <p class="p-team">Product Designer</p>
                 <ul class="team-link-list">
@@ -261,7 +261,7 @@
                 width="264"
                 height="260"
               />
-              <div class="card">
+              <div class="team-container">
                 <h3 class="h-team">Tom Ford</h3>
                 <p class="p-team">Frontend Developer</p>
                 <ul class="team-link-list">
@@ -303,7 +303,7 @@
                 width="264"
                 height="260"
               />
-              <div class="card">
+              <div class="team-container">
                 <h3 class="h-team">Camila Garcia</h3>
                 <p class="p-team">Marketing</p>
                 <ul class="team-link-list">
@@ -345,7 +345,7 @@
                 width="264"
                 height="260"
               />
-              <div class="card">
+              <div class="team-container">
                 <h3 class="h-team">Daniel Wilson</h3>
                 <p class="p-team">UI Designer</p>
                 <ul class="team-link-list">
@@ -384,7 +384,7 @@
         </div>
       </section>
       <!-- Section4-->
-      <section class="our-portfolio hidden">
+      <section class="our-portfolio">
         <div class="container">
           <h2 class="portfolio-title">Our Portfolio</h2>
           <ul class="portfolio-list">
@@ -514,8 +514,8 @@
       </section>
     </main>
     <!-- Footer -->
-    <footer class="page-footer hidden">
-      <div class="container-foot">
+    <footer class="page-footer">
+      <div class="container footer-container">
         <div class="footer-logo-title">
           <a class="footer-logo" href="./index.html"
             >Web <span class="logo-part">Studio</span></a
@@ -581,7 +581,7 @@
       </div>
     </footer>
     <!-- Modal -->
-    <div class="backdrop is-open hidden" data-modal>
+    <div class="backdrop" data-modal>
       <div class="modal">
         <button class="modal-close-btn" type="button" data-modal-close>
           <svg class="icon-close" width="8" height="8">
