@@ -898,7 +898,7 @@ button:hover {
 
 @media only screen and (min-width: 1158px) {
   .footer-container {
-    max-width: 100%;
+    max-width: 1158px;
     flex-direction: row;
     align-items: baseline;
   }
@@ -922,6 +922,7 @@ button:hover {
 }
 
 .footer-logo {
+  font-family: "Raleway", sans-serif;
   display: inline-block;
   text-align: center;
   align-items: center;
@@ -937,6 +938,7 @@ button:hover {
 }
 
 .p-footer {
+  margin-right: 120px;
   font-size: 16px;
   line-height: 1.5;
   color: #f4f4fd;
@@ -1007,6 +1009,20 @@ button:hover {
 }
 
 @media only screen and (min-width: 1158px) {
+  .footer-link:hover {
+    background-color: #31d0aa;
+  }
+
+  .footer-link:focus {
+    background-color: #31d0aa;
+  }
+
+  .team-link-item-footer {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@media only screen and (min-width: 1158px) {
   .footer-link {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -1071,6 +1087,12 @@ button:hover {
   border-radius: 4px;
   color: #ffffff;
   outline: transparent;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-input {
+    width: 264px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
