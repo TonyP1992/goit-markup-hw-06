@@ -276,9 +276,7 @@ button {
   margin: 0 auto;
 }
 
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+@media screen and (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .section-hero {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -288,21 +286,20 @@ button {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (min-resolution: 192dpi),
+  only screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .section-hero {
-    max-width: 768px;
-    padding: 112px 0;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/Dark-bg-tablet-@1x.jpg);
+      url(../images/hero/Dark-bg_tab@2x.jpg);
   }
 }
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+@media only screen and (min-width: 768px) {
   .section-hero {
+    max-width: 768px;
+    padding: 112px 0;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -311,7 +308,7 @@ button {
   }
 }
 
-@media screen and (min-width: 1158px) {
+@media only screen and (min-width: 1158px) {
   .section-hero {
     max-width: 1440px;
     padding: 188px 0;
@@ -323,9 +320,8 @@ button {
   }
 }
 
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+@media only screen and (min-width: 1158px) and (min-resolution: 192dpi),
+  only screen and (min-width: 1158px) and (min-resolution: 2dppx) {
   .section-hero {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -334,7 +330,6 @@ button {
       url(../images/people-office-main-@2x.jpg);
   }
 }
-
 /* button */
 
 button:focus {
