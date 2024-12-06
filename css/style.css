@@ -736,7 +736,7 @@ button:hover {
   }
 }
 
-/* Section 4 */
+/* Section 4  Portfolio*/
 
 .our-portfolio {
   padding: 96px 0;
@@ -801,8 +801,13 @@ button:hover {
   }
 }
 
-.overlay {
-  display: none;
+@media only screen and (min-width: 1158px) {
+  .thumb {
+    position: relative;
+    overflow: hidden;
+    width: 360px;
+    height: 300px;
+  }
 }
 
 .portfolio-card {
@@ -811,8 +816,13 @@ button:hover {
   border-top: none;
 }
 
+.overlay {
+  display: none;
+}
+
 @media only screen and (min-width: 1158px) {
   .overlay {
+    display: flex;
     position: absolute;
     top: 0;
     left: 0;
@@ -825,6 +835,20 @@ button:hover {
     background-color: #4d5ae5;
     padding: 40px 32px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .portfolio-item:hover .overlay {
+    transform: translateY(0%);
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .portfolio-item:hover {
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   }
 }
 
