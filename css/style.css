@@ -622,6 +622,24 @@ button:hover {
   height: 100%;
 }
 
+.stud-menu {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11111;
+  letter-spacing: 0.02em;
+  color: #404bbf;
+}
+
+.mobile-contacts-menu {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #4d5ae5;
+}
+
 .mobile-menu-close {
   position: absolute;
   top: 24px;
@@ -668,15 +686,16 @@ button:hover {
   height: 200px;
 }
 
-.mobile-nav-item {
+.email-contacts-menu {
+  color: #434455;
+}
+
+.mobile-nav-item-bl {
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11111;
   letter-spacing: 0.02em;
-  color: #404bbf;
-}
-
-.mobile-nav-item-bl {
   color: #2e2f42;
 }
 
