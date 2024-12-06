@@ -54,6 +54,12 @@ button {
   overflow: hidden;
 }
 
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
 /* common */
 
 .container {
@@ -1149,8 +1155,7 @@ button:hover {
 /* Modal */
 
 .backdrop {
-  width: 288px;
-  height: 623px;
+  display: flex;
   position: fixed;
   top: 0;
   left: 0;
@@ -1174,18 +1179,16 @@ button:hover {
   position: absolute;
   top: 50%;
   left: 50%;
-  padding: 72px 24px 24px 24px;
-  width: 408px;
-  min-height: 584px;
+  width: 288px;
+  min-height: 623px;
   border-radius: 4px;
-  transform: translate(-50%, -50%);
+  padding: 72px 16px 24px 16px;
+  transform: translateX(-50%) translateY(-50%);
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
   background-color: #fcfcfc;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: transform;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 @media only screen and (min-width: 768px) {
   .modal {
     width: 408px;
@@ -1240,6 +1243,7 @@ button:hover {
 form {
   display: block;
   margin-top: 0em;
+  unicode-bidi: isolate;
 }
 
 .modal-form-field {
@@ -1260,7 +1264,7 @@ form {
   height: 40px;
   padding-left: 38px;
   border: 1px solid rgba(46, 47, 66, 0.4);
-  width: 360px;
+  width: 100%;
   background-color: transparent;
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1323,7 +1327,7 @@ form {
 .comment {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
-  width: 360px;
+  width: 100%;
   height: 120px;
   resize: none;
   font-size: 12px;
