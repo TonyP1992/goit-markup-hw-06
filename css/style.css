@@ -492,7 +492,6 @@ button:hover {
 }
 
 .container-team {
-  display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
@@ -512,6 +511,7 @@ button:hover {
 .list-team {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 72px;
 }
 
@@ -532,6 +532,7 @@ button:hover {
 }
 
 .team-item {
+  max-width: 264px;
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
@@ -632,6 +633,7 @@ button:hover {
 }
 
 .mobile-contacts-menu {
+  font-style: normal;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 20px;
@@ -687,10 +689,12 @@ button:hover {
 }
 
 .email-contacts-menu {
+  font-style: normal;
   color: #434455;
 }
 
 .mobile-nav-item-bl {
+  font-style: normal;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 36px;
@@ -936,6 +940,13 @@ button:hover {
 @media only screen and (min-width: 768px) {
   .footer-logo-title {
     margin-right: 24px;
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .footer-logo-title {
+    margin-right: 120px;
   }
 }
 
@@ -963,7 +974,6 @@ button:hover {
 }
 
 .p-footer {
-  margin-right: 120px;
   font-size: 16px;
   line-height: 1.5;
   color: #f4f4fd;
